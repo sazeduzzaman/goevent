@@ -50,6 +50,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <!-- custom font -->
     <link rel="stylesheet" href="css/font-style.css" type="text/css" />
   </head>
@@ -166,7 +170,7 @@
               <div class="col-lg-12 text-start">
                 <div class="spacer-half"></div>
                 <h1 class="text-start banner-title fs-sm-10vw">
-                  <span class="wow fadeIn" data-wow-delay=".5s">
+                  <span class="wow fadeIn text-white" data-wow-delay=".5s">
                     Where Celebration <br />
                     Meets <span class="site-color">Expertise</span>
                   </span>
@@ -273,7 +277,7 @@
               </div>
               <div class="col-lg-5">
                 <div>
-                  <p class="mb30">
+                  <p class="mb-4">
                     <span
                       class="border rounded-pill px-3 py-1 wow fadeIn"
                       data-wow-delay=".5s"
@@ -281,7 +285,7 @@
                     >
                   </p>
                   <h1
-                    class="text-start mb20 fs-56 wow fadeIn"
+                    class="text-start mb-4 fs-56 wow fadeIn text-white"
                     data-wow-delay=".7s"
                   >
                     About The <span class="site-color">Event</span>
@@ -315,8 +319,8 @@
                         src="./images/home/icons/shedule.svg"
                         alt=""
                       />
-                      <div>
-                        <h3>When start</h3>
+                      <div class="">
+                        <h3 class="text-white">When start</h3>
                         <p class="text-white">21th - 24th February 2025</p>
                       </div>
                     </div>
@@ -328,7 +332,7 @@
                         alt=""
                       />
                       <div>
-                        <h3>Where</h3>
+                        <h3 class="text-white">Where</h3>
                         <p class="text-white">21th - 24th February 2025</p>
                       </div>
                     </div>
@@ -339,6 +343,103 @@
           </div>
         </section>
         <!-- section close -->
+        <section class="section-spacer">
+          <div class="container pt-50">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="text-center">
+                  <p class="mb-4">
+                    <span
+                      class="border rounded-pill px-3 py-1 wow fadeIn animated animated"
+                      data-wow-delay=".5s"
+                      style="
+                        visibility: visible;
+                        animation-delay: 0.5s;
+                        animation-name: fadeIn;
+                      "
+                      >Plan Less, Experience More</span
+                    >
+                  </p>
+                  <h2 class="mb-0 text-white">
+                    Stress-Free Events, Just a Click Away
+                  </h2>
+                  <div
+                    class="de-separator-1"
+                    style="background-size: cover"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-8 offset-lg-2">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="card p-4 rounded-10">
+                    <div class="card-body">
+                      <div class="mb-3">
+                        <i class="fas fa-ticket fs-1 site-color"></i>
+                      </div>
+                      <h3 class="text-white">E - Ticketing</h3>
+                      <p class="pt-2">
+                        A streamlined online ticketing solution to enhance
+                        customer experience by ensuring effortless purchases and
+                        secure payment processing.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="card p-4 rounded-10 mt-5">
+                    <div class="card-body">
+                      <div class="mb-3">
+                        <i class="fa-solid fa-bullhorn site-color fs-1"></i>
+                      </div>
+                      <h3 class="text-white">Smart Campaigns</h3>
+                      <p class="pt-2 mb-0">
+                        Expand customer reach with targeted SMS and email
+                        marketing campaigns, engage with audience before,
+                        during, and after events with personalized messages,
+                        event updates and exclusive offers.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="card p-4 rounded-10" style="margin-top: -25px">
+                    <div class="card-body">
+                      <div class="mb-3">
+                        <i class="fas fa-user-tie site-color fs-1"></i>
+                      </div>
+                      <h3 class="text-white">RSVP Management</h3>
+                      <p class="pt-2 mb-0">
+                        Managing guest lists with spreadsheets or forms is
+                        outdated. Eventa streamlines RSVPs and event planning,
+                        all in one place.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="card p-4 rounded-10 mt-4">
+                    <div class="card-body">
+                      <div class="mb-3">
+                        <i class="fas fa-qrcode site-color fs-1"></i>
+                      </div>
+                      <h3 class="text-white">Digital Scanner</h3>
+                      <p class="pt-2 mb-0">
+                        Deliver a seamless event entry experience your attendees
+                        with mobile-based ticket scanner streamline check-ins,
+                        reduce wait times, and ensure secure, hassle-free access
+                        to your events.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         <!-- section begin -->
         <section class="section-spacer">
           <div class="container">
@@ -347,10 +448,13 @@
                 class="col-lg-12 text-start wow fadeInUp d-flex align-items-center"
               >
                 <div class="row align-items-center">
-                  <div class="col-lg-3 wow fadeIn" data-wow-delay=".3s">
+                  <div
+                    class="col-lg-3 wow fadeIn text-white"
+                    data-wow-delay=".3s"
+                  >
                     <div>
                       <div class="text-start mb-3">Upcoming Highlight</div>
-                      <h2 class="text-uppercase mb-0">
+                      <h2 class="text-uppercase mb-0 text-white">
                         Featured Event Session
                       </h2>
                       <div class="de-separator-1"></div>
@@ -394,7 +498,7 @@
                       <div
                         class="gradient-overlay abs bottom-0 start-0 w-100 p-40 text-white z-3"
                       >
-                        <h4 class="mb-3 lh-1-5">
+                        <h4 class="mb-3 lh-1-5 text-white">
                           UX Conference 2025: Designing for the Future
                         </h4>
                         <div class="pb-3">
@@ -406,10 +510,11 @@
                           class="relative z-3 d-flex align-items-center"
                         >
                           <button
-                            class="site-btn-2 wow fadeIn"
+                            class="site-btn-2 w-100 wow fadeIn"
                             data-wow-delay=".9s"
+                            style="text-align: center !important"
                           >
-                            Book Ticket
+                            Explore Event Now
                             <i class="fas fa-ticket"></i>
                           </button>
                         </a>
@@ -442,7 +547,7 @@
                       <div
                         class="gradient-overlay abs bottom-0 start-0 w-100 p-40 text-white z-3"
                       >
-                        <h4 class="mb-3 lh-1-5">
+                        <h4 class="mb-3 lh-1-5 text-white">
                           AI Product Summit 2025: Build Smarter, Faster
                         </h4>
                         <div class="pb-3">
@@ -454,10 +559,11 @@
                           class="relative z-3 d-flex align-items-center"
                         >
                           <button
-                            class="site-btn-2 wow fadeIn"
+                            class="site-btn-2 w-100 wow fadeIn"
                             data-wow-delay=".9s"
+                            style="text-align: center !important"
                           >
-                            Book Ticket
+                            Explore Event Now
                             <i class="fas fa-ticket"></i>
                           </button>
                         </a>
@@ -490,7 +596,7 @@
                       <div
                         class="gradient-overlay abs bottom-0 start-0 w-100 p-40 text-white z-3"
                       >
-                        <h4 class="mb-3 lh-1-5">
+                        <h4 class="mb-3 lh-1-5 text-white">
                           Startup Innovation Forum: From Idea to Impact
                         </h4>
                         <div class="pb-3">
@@ -502,10 +608,11 @@
                           class="relative z-3 d-flex align-items-center"
                         >
                           <button
-                            class="site-btn-2 wow fadeIn"
+                            class="site-btn-2 w-100 wow fadeIn"
                             data-wow-delay=".9s"
+                            style="text-align: center !important"
                           >
-                            Book Ticket
+                            Explore Event Now
                             <i class="fas fa-ticket"></i>
                           </button>
                         </a>
@@ -521,79 +628,242 @@
         <!-- section begin -->
         <section class="section-spacer">
           <div class="container">
-            <div class="row">asdasd</div>
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="text-center">
+                  <p class="mb-4">
+                    <span
+                      class="border rounded-pill px-3 py-1 wow fadeIn animated animated"
+                      data-wow-delay=".5s"
+                      style="
+                        visibility: visible;
+                        animation-delay: 0.5s;
+                        animation-name: fadeIn;
+                      "
+                      >Your RSVP Our Treat!</span
+                    >
+                  </p>
+                  <h2 class="mb-0 text-white">Your RSVP Our Treat!</h2>
+                  <p class="w-50 mx-auto">
+                    Eventa lets you manage RSVPs, send invites, and access guest
+                    info instantly for a smoother, smarter event planning
+                    experience. Focus on what matters, creating memorable
+                    events, while Eventa handles the rest.
+                  </p>
+                  <div
+                    class="de-separator-1"
+                    style="background-size: cover"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="swiper-container">
+                  <div class="swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img
+                          class="img-fluid"
+                          src="https://poplifephotobooth.com/wp-content/uploads/2024/05/051224-CheyenneLokesh-5701.jpg"
+                          alt="Event Image"
+                        />
+
+                        <div class="slide-caption">
+                          <h3 class="slide-title">Cheyenne & Lokesh</h3>
+                          <p class="slide-description">
+                            A beautiful wedding moment captured on May 12, 2024.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          class="img-fluid"
+                          src="https://poplifephotobooth.com/wp-content/uploads/2024/05/051224-CheyenneLokesh-5701.jpg"
+                          alt="Event Image"
+                        />
+
+                        <div class="slide-caption">
+                          <h3 class="slide-title">Cheyenne & Lokesh</h3>
+                          <p class="slide-description">
+                            A beautiful wedding moment captured on May 12, 2024.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          class="img-fluid"
+                          src="https://poplifephotobooth.com/wp-content/uploads/2024/05/051224-CheyenneLokesh-5701.jpg"
+                          alt="Event Image"
+                        />
+
+                        <div class="slide-caption">
+                          <h3 class="slide-title">Cheyenne & Lokesh</h3>
+                          <p class="slide-description">
+                            A beautiful wedding moment captured on May 12, 2024.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          class="img-fluid"
+                          src="https://poplifephotobooth.com/wp-content/uploads/2024/05/051224-CheyenneLokesh-5701.jpg"
+                          alt="Event Image"
+                        />
+
+                        <div class="slide-caption">
+                          <h3 class="slide-title">Cheyenne & Lokesh</h3>
+                          <p class="slide-description">
+                            A beautiful wedding moment captured on May 12, 2024.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          class="img-fluid"
+                          src="https://poplifephotobooth.com/wp-content/uploads/2024/05/051224-CheyenneLokesh-5701.jpg"
+                          alt="Event Image"
+                        />
+
+                        <div class="slide-caption">
+                          <h3 class="slide-title">Cheyenne & Lokesh</h3>
+                          <p class="slide-description">
+                            A beautiful wedding moment captured on May 12, 2024.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          class="img-fluid"
+                          src="https://poplifephotobooth.com/wp-content/uploads/2024/05/051224-CheyenneLokesh-5701.jpg"
+                          alt="Event Image"
+                        />
+
+                        <div class="slide-caption">
+                          <h3 class="slide-title">Cheyenne & Lokesh</h3>
+                          <p class="slide-description">
+                            A beautiful wedding moment captured on May 12, 2024.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- If we need navigation buttons -->
+                  <div class="swiper-button-prev">
+                    <i class="fas fa-chevron-left"></i>
+                  </div>
+                  <div class="swiper-button-next">
+                    <i class="fas fa-chevron-right text-black fs-6"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
         <!-- section close -->
+        <section class="section-spacer">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="text-center">
+                  <p class="mb-4">
+                    <span
+                      class="border rounded-pill px-3 py-1 wow fadeIn animated animated"
+                      data-wow-delay=".5s">Plan Less, Experience More</span
+                    >
+                  </p>
+                  <h2 class="mb-0 text-white">
+                    Stress-Free Events, Just a Click Away
+                  </h2>
+                  <div
+                    class="de-separator-1"
+                    style="background-size: cover"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="main-expand">
+                  <div class="inner-expand">
+                    <div
+                      class="card"
+                      style="
+                        --events-image: url(https://images.unsplash.com/photo-1517814761483-6769dab4e9c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80);
+                      "
+                    >
+                      <h5 class="title">Sports Events</h5>
+                      <div class="text">
+                        <p>
+                          Because the right people make all the difference.
+                          Because the right people make all the difference.
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="card"
+                      style="
+                        --events-image: url(https://images.unsplash.com/photo-1461784180009-21121b2f204c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);
+                      "
+                    >
+                      <h5 class="title">Sports Events</h5>
+                      <div class="text">
+                        <p>Rise Beyond Limits</p>
+                      </div>
+                    </div>
+                    <div
+                      class="card"
+                      style="
+                        --events-image: url(https://images.unsplash.com/photo-1542628682-88321d2a4828?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);
+                      "
+                    >
+                      <h5 class="title">Sports Events</h5>
+                      <div class="text">
+                        <p>Rise Beyond Limits</p>
+                      </div>
+                    </div>
+                    <div
+                      class="card"
+                      style="
+                        --events-image: url(https://images.unsplash.com/photo-1516873240891-4bf014598ab4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);
+                      "
+                    >
+                      <h5 class="title">Sports Events</h5>
+                      <div class="text">
+                        <p>Rise Beyond Limits</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         <!-- section begin -->
-        <section class="no-bottom section-spacer">
-          <div
-            id="gallery"
-            class="gallery zoom-gallery full-gallery de-gallery pf_full_width wow fadeInUp"
-            data-wow-delay=".3s"
-          >
-            <!-- gallery item -->
-            <div class="item residential">
-              <div class="picframe">
-                <a href="images/portfolio/1.jpg" title="Event Photo">
-                  <span class="overlay">
-                    <span class="pf_text">
-                      <span class="project-name">View Image</span>
-                    </span>
-                  </span>
-                  <img src="images/portfolio/1.jpg" alt="" />
-                </a>
+        <section class="pt-50 pb-50">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="text-center">
+                  <p class="mb-4">
+                    <span
+                      class="border rounded-pill px-3 py-1 wow fadeIn animated animated"
+                      data-wow-delay=".5s">Our Latest</span
+                    >
+                  </p>
+                  <h2 class="mb-0 text-white">
+                    Featured Category
+                  </h2>
+                  <div
+                    class="de-separator-1"
+                    style="background-size: cover"
+                  ></div>
+                </div>
               </div>
             </div>
-            <!-- close gallery item -->
-
-            <!-- gallery item -->
-            <div class="item hospitaly">
-              <div class="picframe">
-                <a href="images/portfolio/2.jpg" title="Event Photo">
-                  <span class="overlay">
-                    <span class="pf_text">
-                      <span class="project-name">View Image</span>
-                    </span>
-                  </span>
-                  <img src="images/portfolio/2.jpg" alt="" />
-                </a>
-              </div>
-            </div>
-            <!-- close gallery item -->
-
-            <!-- gallery item -->
-            <div class="item hospitaly">
-              <div class="picframe">
-                <a href="images/portfolio/3.jpg" title="Event Photo">
-                  <span class="overlay">
-                    <span class="pf_text">
-                      <span class="project-name">View Image</span>
-                    </span>
-                  </span>
-                  <img src="images/portfolio/3.jpg" alt="" />
-                </a>
-              </div>
-            </div>
-            <!-- close gallery item -->
-
-            <!-- gallery item -->
-            <div class="item residential">
-              <div class="picframe">
-                <a href="images/portfolio/4.jpg" title="Event Photo">
-                  <span class="overlay">
-                    <span class="pf_text">
-                      <span class="project-name">View Image</span>
-                    </span>
-                  </span>
-                  <img src="images/portfolio/4.jpg" alt="" />
-                </a>
-              </div>
-            </div>
-            <!-- close gallery item -->
           </div>
         </section>
-        <!-- section close -->
         <!-- section begin -->
         <section
           id="call-to-action"
@@ -604,7 +874,7 @@
             <div class="row align-items-center">
               <div class="col-lg-8 col-md-7">
                 <h3 class="size-2 no-margin">
-                  Register Now Before It’s Too Late! Don’t Miss Out 
+                  Register Now Before It’s Too Late! Don’t Miss Out
                 </h3>
               </div>
 
@@ -784,7 +1054,47 @@
     ================================================== -->
     <script src="js/plugins.js"></script>
     <script src="js/designesia.js"></script>
-    <script src="js/validation.js"></script>
-    <script src="js/countdown-custom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 100,
+          modifier: 3.8,
+          slideShadows: true,
+        },
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+        },
+        loop: true,
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        keyboard: {
+          enabled: true,
+        },
+        mousewheel: {
+          thresholdDelta: 70,
+        },
+        breakpoints: {
+          560: {
+            slidesPerView: 3,
+          },
+          768: {
+            slidesPerView: 3,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+        },
+      });
+    </script>
   </body>
 </html>
