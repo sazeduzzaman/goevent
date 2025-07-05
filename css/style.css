@@ -2302,7 +2302,7 @@ section.no-padding {
 .main-expand .card .text {
   position: relative;
   background: linear-gradient(0deg, black, transparent);
-  padding: 15px;
+  padding: 30px 20px;
   color: var(--primary-color);
   opacity: 0;
   transform: translateY(10px);
@@ -2314,7 +2314,93 @@ section.no-padding {
   opacity: 1;
   transform: translateY(0);
 }
+:root {
+  --vmarquee-noItems: 5;
+  --vmarquee-size: 150px;
+  --vmarquee-width: 430px;
+  --vmarquee-gap: 20px;
+  --vmarquee-speed: 35s;
+}
 
+.vmarquee-body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 850px;
+  width: 100%;
+}
+
+.vmarquee-container {
+  display: flex;
+  gap: var(--vmarquee-gap);
+  overflow: hidden;
+  background: var(--vmarquee-bg);
+  border: var(--vmarquee-gap) solid var(--vmarquee-bg);
+  border-radius: var(--vmarquee-gap);
+  /* padding: var(--vmarquee-gap); */
+  height: calc(var(--vmarquee-noItems) * var(--vmarquee-size));
+  width: calc(var(--vmarquee-noItems) * var(--vmarquee-width));
+}
+
+/* The grid is a row of vertical columns */
+.vmarquee-grid {
+  display: flex;
+  flex-direction: row;
+  gap: var(--vmarquee-gap);
+  height: 100%; /* ✅ Ensure it fills container */
+}
+
+.vmarquee-row {
+  display: flex;
+  flex-direction: column;
+  height: 200%; /* Enough to scroll half up/down */
+  overflow: hidden; /* ✅ Ensures clipping */
+}
+
+.vmarquee-box {
+  width: 245px;
+  height: var(--vmarquee-size);
+  border-radius: var(--vmarquee-gap);
+  overflow: hidden;
+  flex-shrink: 0; /* ✅ Prevent shrinking */
+  margin-bottom: 20px;
+}
+
+.vmarquee-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Animations */
+.vmarquee-forward {
+  animation: vmarquee-scroll-up var(--vmarquee-speed) linear infinite;
+}
+
+.vmarquee-backward {
+  animation: vmarquee-scroll-down var(--vmarquee-speed) linear infinite;
+}
+
+@keyframes vmarquee-scroll-up {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes vmarquee-scroll-down {
+  0% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 
 /* -------------------------------------------------- 
 custom for 320px & 480px 
