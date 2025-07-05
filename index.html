@@ -59,24 +59,27 @@
       <!-- header begin -->
       <header class="transparent">
         <div class="info">
-          <div class="container">
+          <div class="container px-0 py-2">
             <div class="row">
               <div class="col-md-12">
-                <div class="column">
-                  Working Hours Monday - Friday
-                  <span class="id-color"><strong>08:00-16:00</strong></span>
-                </div>
-                <div class="column">
-                  Toll Free
-                  <span class="id-color"><strong>1800.899.900</strong></span>
-                </div>
-                <!-- social icons -->
-                <div class="column social">
-                  <a href="#"><i class="fa fa-facebook"></i></a>
-                  <a href="#"><i class="fa fa-twitter"></i></a>
-                  <a href="#"><i class="fa fa-rss"></i></a>
-                  <a href="#"><i class="fa fa-google-plus"></i></a>
-                  <a href="#"><i class="fa fa-envelope-o"></i></a>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="column ps-0">
+                    <span class="site-color">Working Hours:</span> Monday -
+                    Friday
+                    <span class="text-white"><span>08:00-16:00</span></span>
+                  </div>
+                  <div>
+                    <div class="column">
+                      <span class="site-color">Toll Free:</span>
+                      <span class="text-white"><span>1800.899.900</span></span>
+                    </div>
+                    <!-- social icons -->
+                    <div class="column social pe-0">
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                  </div>
                 </div>
                 <!-- social icons close -->
               </div>
@@ -84,51 +87,55 @@
           </div>
         </div>
 
-        <div class="container">
+        <div class="container header-container px-0">
           <div class="row align-items-center">
             <div class="col-md-12">
-              <!-- logo begin -->
-              <div id="logo">
-                <a href="index.html">
-                  <img class="logo" src="images/home/logo.webp" alt="" />
-                </a>
-              </div>
-              <!-- logo close -->
-
-              <!-- small button begin -->
-              <span id="menu-btn"></span>
-              <!-- small button close -->
-
-              <div class="header-extra d-flex align-items-center">
-                <a href="" class="btn btn-outline-warning d-none d-lg-block"
-                  >Create Event</a
-                >
-                <div class="v-center">
-                  <span id="b-menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </span>
+              <div class="main-header">
+                <!-- logo begin -->
+                <div id="logo">
+                  <a href="index.html">
+                    <img
+                      class="logo img-fluid"
+                      src="images/home/logo.webp"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <!-- logo close -->
+                <div>
+                  <!-- small button begin -->
+                  <span id="menu-btn"></span>
+                  <!-- small button close -->
+                  <div class="d-flex align-items-center">
+                    <!-- mainmenu begin -->
+                    <ul id="mainmenu" class="ms-2 no-separator mb-0">
+                      <li>
+                        <a href="#">Home<span></span></a>
+                      </li>
+                      <li>
+                        <a href="#">Explore Events<span></span></a>
+                      </li>
+                      <li>
+                        <a href="#">About<span></span></a>
+                      </li>
+                      <li>
+                        <a href="#">Contact<span></span></a>
+                      </li>
+                    </ul>
+                    <!-- mainmenu close -->
+                    <div class="header-extra d-flex align-items-center">
+                      <a href="" class="site-btn-2 d-none d-lg-block"
+                        >Create Event</a
+                      >
+                      <div class="v-center">
+                        <span id="b-menu" class="p-2 px-3">
+                          <i class="fas fa-bars"></i>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-
-              <!-- mainmenu begin -->
-              <ul id="mainmenu" class="ms-2 no-separator">
-                <li>
-                  <a href="#">Home<span></span></a>
-                </li>
-                <li>
-                  <a href="#">Explore Events<span></span></a>
-                </li>
-                <li>
-                  <a href="#">About<span></span></a>
-                </li>
-                <li>
-                  <a href="#">Contact<span></span></a>
-                </li>
-              </ul>
-
-              <!-- mainmenu close -->
             </div>
           </div>
         </div>
@@ -139,23 +146,31 @@
       <div id="content" class="no-bottom no-top">
         <!-- section begin -->
         <section
-          id="section-hero"
-          class="jarallax text-light relative overflow-hidden"
+          class="jarallax text-light relative overflow-hidden pt-200 pb-200 section-banner"
         >
-          <img src="images/home/banner.jpg" class="jarallax-img" alt="" />
+          <!-- Image wrapper with overlay -->
+          <div class="image-wrapper">
+            <img
+              src="images/home/banner.jpg"
+              class="jarallax-img banner-image"
+              alt=""
+            />
+            <div class="image-overlay"></div>
+          </div>
+
           <div class="de-gradient-edge-bottom"></div>
           <div class="spacer-double"></div>
-          <div class="container relative z-3">
+
+          <div class="container content-wrapper">
             <div class="row align-items-center justify-content-start">
               <div class="col-lg-12 text-start">
                 <div class="spacer-half"></div>
                 <h1 class="text-start banner-title fs-sm-10vw">
-                  <span class="wow fadeIn" data-wow-delay=".5s"
-                    >Where Celebration <br />
+                  <span class="wow fadeIn" data-wow-delay=".5s">
+                    Where Celebration <br />
                     Meets <span class="site-color">Expertise</span>
                   </span>
                 </h1>
-
                 <div class="spacer-half"></div>
                 <div class="spacer-half"></div>
 
@@ -167,8 +182,10 @@
                       inclusive, and meaningful. Host your first event or get
                       tickets to events happening near you!
                     </p>
+
                     <div class="spacer-half"></div>
                     <div class="spacer-half"></div>
+
                     <div>
                       <button
                         class="site-btn me-2 wow fadeIn"
@@ -185,987 +202,331 @@
                     </div>
                   </div>
                 </div>
+
                 <div class="spacer-half"></div>
               </div>
             </div>
           </div>
-          <!-- <div class="spacer-single"></div> -->
         </section>
         <!-- section close -->
-
         <!-- section begin -->
-        <section
-          class="pb-50"
-          id="section-about"
-          data-bgimage="url(images/bg/1.png) fixed no-repeat"
-        >
+        <section class="section-spacer">
           <div class="container">
             <div class="row g-4 gx-5 align-items-center">
-              <div class="col-lg-6">
-                <div class="relative pb-75 wow fadeInLeft" data-wow-delay="0s">
-                  <img
-                    src="images/home/about-1.webp"
-                    class="img-fluid abs abs-centered bg-dark z-3 p-1"
-                    style="border-radius: 10px"
-                    alt=""
-                  />
+              <div class="col-lg-7">
+                <div class="row align-items-center">
+                  <div class="col-lg-6">
+                    <div class="about-img d-flex flex-column gap-4">
+                      <div class="img-wrapper wow fadeIn" data-wow-delay=".3s">
+                        <img
+                          class="img-fluid w-100"
+                          src="./images/home/about/about_1.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="img-wrapper wow fadeIn" data-wow-delay=".5s">
+                        <img
+                          class="img-fluid w-100"
+                          src="./images/home/about/about_2.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6">
+                    <div class="mt-70">
+                      <div
+                        class="wow fadeIn slow-move ab-sl-lfrt"
+                        data-wow-delay=".6s"
+                      >
+                        <img
+                          class="img-fluid"
+                          src="./images/home/icons/about-shape-1.svg"
+                          alt=""
+                        />
+                      </div>
+                      <div
+                        class="center-img-wrapper wow fadeIn"
+                        data-wow-delay=".7s"
+                      >
+                        <img
+                          class="img-fluid w-100"
+                          src="./images/home/about/about_3.png"
+                          alt=""
+                        />
+                      </div>
+                      <div
+                        class="wow fadeIn slow-spin ab-spin"
+                        data-wow-delay=".8s"
+                        style="margin-top: 20px"
+                      >
+                        <img
+                          class="img-fluid"
+                          src="./images/home/icons/about-shape-2.svg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-5">
+                <div>
+                  <p class="mb30">
+                    <span
+                      class="border rounded-pill px-3 py-1 wow fadeIn"
+                      data-wow-delay=".5s"
+                      >Book Your Ticket Now</span
+                    >
+                  </p>
+                  <h1
+                    class="text-start mb20 fs-56 wow fadeIn"
+                    data-wow-delay=".7s"
+                  >
+                    About The <span class="site-color">Event</span>
+                  </h1>
+                  <p class="text-white mb-24 wow fadeIn" data-wow-delay=".8s">
+                    The world's best creatives in the tech sector are cordially
+                    invited to come learn, grow, fall flat, try new things, be
+                    vulnerable, and embark on incredible journeys. Meet and
+                    network with professionals from various fields.
+                  </p>
+                  <p class="text-white wow fadeIn" data-wow-delay=".9s">
+                    Join us for an extraordinary experience at our upcoming
+                    Product Design Improvement Workshop! This event brings
+                    together creative minds, industry experts, and passionate
+                    professionals to explore the latest trends, share innovative
+                    ideas, and collaboratively enhance product designs. Gain
+                    knowledge from top industry professionals and thought
+                    leaders
+                  </p>
+                  <div>
+                    <button class="site-btn-2 wow fadeIn" data-wow-delay="1.0s">
+                      Create An Event <i class="fas fa-arrow-right-long"></i>
+                    </button>
+                  </div>
+                  <hr />
+                  <div class="row">
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="1.1s">
+                      <img
+                        class="img-fluid mb-3"
+                        height="48px"
+                        src="./images/home/icons/shedule.svg"
+                        alt=""
+                      />
+                      <div>
+                        <h3>When start</h3>
+                        <p class="text-white">21th - 24th February 2025</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="1.2s">
+                      <img
+                        class="img-fluid mb-3"
+                        height="48px"
+                        src="./images/home/icons/globe.svg"
+                        alt=""
+                      />
+                      <div>
+                        <h3>Where</h3>
+                        <p class="text-white">21th - 24th February 2025</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- section close -->
+        <!-- section begin -->
+        <section class="section-spacer">
+          <div class="container">
+            <div class="row">
+              <div
+                class="col-lg-12 text-start wow fadeInUp d-flex align-items-center"
+              >
+                <div class="row align-items-center">
+                  <div class="col-lg-3 wow fadeIn" data-wow-delay=".3s">
+                    <div>
+                      <div class="text-start mb-3">Upcoming Highlight</div>
+                      <h2 class="text-uppercase mb-0">
+                        Featured Event Session
+                      </h2>
+                      <div class="de-separator-1"></div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-9 wow fadeIn" data-wow-delay=".5s">
+                    <p class="text-justify text-white">
+                      Join industry leaders, visionary designers, and top
+                      developers for a dynamic session focused on innovation,
+                      collaboration, and the future of technology. Discover
+                      emerging trends, share ideas, and build connections that
+                      drive meaningful change. This is your chance to gain
+                      actionable insights and be inspired by the minds shaping
+                      tomorrow’s digital world.
+                    </p>
+                  </div>
                 </div>
               </div>
 
-              <div class="spacer-double d-lg-none d-sm-block"></div>
-              <div class="spacer-double d-lg-none d-sm-block"></div>
-
-              <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.5s">
-                <h2 class="text-uppercase">ABOUT US</h2>
-                <p>
-                  goEvent combines powerful event management tools with
-                  real-time audience engagement — all in one simple, intuitive
-                  platform. Whether you're planning a concert, seminar,
-                  festival, corporate event, or community gathering, goEvent
-                  empowers you to manage every aspect with ease. Create and
-                  customize event pages, sell tickets securely, schedule
-                  sessions, track registrations, and gain insights through
-                  powerful analytics — all from one dashboard. With features
-                  like QR code check-ins, instant updates, and integrated
-                  communication tools, goEvent ensures a seamless experience for
-                  both organizers and attendees. From the first invitation to
-                  post-event feedback, goEvent streamlines the journey so you
-                  can focus on delivering unforgettable, high-impact experiences
-                  every time.
-                </p>
-
-                <div class="spacer10"></div>
-
+              <div class="col-lg-4 wow fadeIn" data-wow-delay=".3s">
                 <a href="">
-                  <button class="site-btn-2">
-                    About Us <i class="fas fa-arrow-right-long"></i>
-                  </button>
+                  <div
+                    class="hover relative overflow-hidden rounded-1 evt-sing-card"
+                  >
+                    <div class="relative overflow-hidden">
+                      <img
+                        src="images/news/s1.webp"
+                        class="hover-scale-in-1 w-100 object-fit-cover"
+                        alt="UX Conference 2025"
+                      />
+
+                      <div
+                        class="abs z-2 bg-color rounded-1 text-white p-3 pb-2 m-4 text-center fw-600"
+                      >
+                        <h4 class="fs-36 mb-0 lh-1">12</h4>
+                        <span>Aug</span>
+                      </div>
+
+                      <!-- Gradient overlay block -->
+                      <div
+                        class="gradient-overlay abs bottom-0 start-0 w-100 p-40 text-white z-3"
+                      >
+                        <h4 class="mb-3 lh-1-5">
+                          UX Conference 2025: Designing for the Future
+                        </h4>
+                        <div class="pb-3">
+                          <i class="fas fa-clock"></i>
+                          <span>8.00am-10.00am</span>
+                        </div>
+                        <a
+                          href="#"
+                          class="relative z-3 d-flex align-items-center"
+                        >
+                          <button
+                            class="site-btn-2 wow fadeIn"
+                            data-wow-delay=".9s"
+                          >
+                            Book Ticket
+                            <i class="fas fa-ticket"></i>
+                          </button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-lg-4 wow fadeIn" data-wow-delay=".5s">
+                <a href="">
+                  <div
+                    class="hover relative overflow-hidden rounded-1 evt-sing-card"
+                  >
+                    <div class="relative overflow-hidden">
+                      <img
+                        src="images/news/s2.webp"
+                        class="hover-scale-in-1 w-100 object-fit-cover"
+                        alt="UX Conference 2025"
+                      />
+
+                      <div
+                        class="abs z-2 bg-color rounded-1 text-white p-3 pb-2 m-4 text-center fw-600"
+                      >
+                        <h4 class="fs-36 mb-0 lh-1">12</h4>
+                        <span>Aug</span>
+                      </div>
+
+                      <!-- Gradient overlay block -->
+                      <div
+                        class="gradient-overlay abs bottom-0 start-0 w-100 p-40 text-white z-3"
+                      >
+                        <h4 class="mb-3 lh-1-5">
+                          AI Product Summit 2025: Build Smarter, Faster
+                        </h4>
+                        <div class="pb-3">
+                          <i class="fas fa-clock"></i>
+                          <span>8.00am-10.00am</span>
+                        </div>
+                        <a
+                          href="#"
+                          class="relative z-3 d-flex align-items-center"
+                        >
+                          <button
+                            class="site-btn-2 wow fadeIn"
+                            data-wow-delay=".9s"
+                          >
+                            Book Ticket
+                            <i class="fas fa-ticket"></i>
+                          </button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-lg-4 wow fadeIn" data-wow-delay=".7s">
+                <a href="">
+                  <div
+                    class="hover relative overflow-hidden rounded-1 evt-sing-card"
+                  >
+                    <div class="relative overflow-hidden">
+                      <img
+                        src="images/news/s3.webp"
+                        class="hover-scale-in-1 w-100 object-fit-cover"
+                        alt="UX Conference 2025"
+                      />
+
+                      <div
+                        class="abs z-2 bg-color rounded-1 text-white p-3 pb-2 m-4 text-center fw-600"
+                      >
+                        <h4 class="fs-36 mb-0 lh-1">12</h4>
+                        <span>Aug</span>
+                      </div>
+
+                      <!-- Gradient overlay block -->
+                      <div
+                        class="gradient-overlay abs bottom-0 start-0 w-100 p-40 text-white z-3"
+                      >
+                        <h4 class="mb-3 lh-1-5">
+                          Startup Innovation Forum: From Idea to Impact
+                        </h4>
+                        <div class="pb-3">
+                          <i class="fas fa-clock"></i>
+                          <span>8.00am-10.00am</span>
+                        </div>
+                        <a
+                          href="#"
+                          class="relative z-3 d-flex align-items-center"
+                        >
+                          <button
+                            class="site-btn-2 wow fadeIn"
+                            data-wow-delay=".9s"
+                          >
+                            Book Ticket
+                            <i class="fas fa-ticket"></i>
+                          </button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
                 </a>
               </div>
             </div>
           </div>
         </section>
-
-        <!-- section begin -->
-        <section id="section-features" class="pb-50">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6 offset-md-3 text-center wow fadeInUp">
-                <div class="uptitle">Top Reasons to Join</div>
-                <h2 class="text-uppercase mb-0">Why you should Join Event</h2>
-                <div class="de-separator-1"></div>
-              </div>
-
-              <div class="col-lg-4 wow fadeIn" data-wow-delay="0s">
-                <div class="box-number square">
-                  <i
-                    class="bg-color hover-color-2 fa fa-microphone text-light"
-                  ></i>
-                  <div class="text">
-                    <h3><span>E - Ticketing</span></h3>
-                    <p>
-                      Simplify your event access with our E-Ticketing system —
-                      offering instant digital ticket delivery, real-time
-                      updates, and seamless check-ins for a hassle-free.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4 wow fadeIn" data-wow-delay=".25s">
-                <div class="box-number square">
-                  <i
-                    class="bg-color hover-color-2 fas fa-lightbulb text-light"
-                  ></i>
-                  <div class="text">
-                    <h3><span>Smart Campaigns</span></h3>
-                    <p>
-                      Drive engagement and boost attendance with Smart Campaigns
-                      — deliver personalized SMS and email promotions, share
-                      timely event updates.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4 wow fadeIn" data-wow-delay=".5s">
-                <div class="box-number square">
-                  <i
-                    class="bg-color hover-color-2 fa fa-sitemap text-light"
-                  ></i>
-                  <div class="text">
-                    <h3><span>RSVP Management</span></h3>
-                    <p> class="text-justify"
-                      Simplify guest tracking with our RSVP Management system —
-                      easily monitor responses, send reminders, and manage
-                      attendance, all from a centralized dash.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="spacer-single sm-hide"></div>
-
-              <div class="col-lg-4 wow fadeIn" data-wow-delay=".75s">
-                <div class="box-number square">
-                  <i
-                    class="bg-color hover-color-2 fa fa-building text-light"
-                  ></i>
-                  <div class="text">
-                    <h3><span>Modern Venue</span></h3>
-                    <p class="text-justify">
-                      Host your events in a modern venue equipped with
-                      cutting-edge technology, flexible layouts, and a premium
-                      atmosphere designed to impress  your audience.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4 wow fadeIn" data-wow-delay="1s">
-                <div class="box-number square">
-                  <i class="bg-color hover-color-2 fa fa-users text-light"></i>
-                  <div class="text">
-                    <h3><span>Well Decoration</span></h3>
-                    <p class="text-justify">
-                      Elevate your event ambiance with thoughtful and stylish
-                      decorations — from elegant themes to vibrant setups, every
-                      detail is crafted to create a memorable experience.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4 wow fadeIn" data-wow-delay="1.25s">
-                <div class="box-number square">
-                  <i
-                    class="bg-color hover-color-2 fa fa-mortar-board text-light"
-                  ></i>
-                  <div class="text">
-                    <h3><span>Event Highlights</span></h3>
-                    <p class="text-justify">
-                      Capture and showcase the best moments of your event with
-                      professional photography, videography, and instant social
-                      media sharing to keep.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
         <!-- section close -->
-
         <!-- section begin -->
-        <section id="section-speakers" class="pt-50 pb-50">
+        <section class="section-spacer">
           <div class="container">
-            <div class="row">
-              <div class="col-md-6 offset-md-3 text-center wow fadeInUp">
-                <div class="uptitle">Meet the Experts</div>
-                <h2 class="text-uppercase mb-0">The Speakers</h2>
-                <div class="de-separator-1"></div>
-              </div>
-
-              <div class="clearfix"></div>
-
-              <div
-                class="col-xl-3 col-lg-4 col-sm-6 mb30 wow fadeInUp"
-                data-wow-delay=".0s"
-              >
-                <!-- team member -->
-                <div class="de-team-list">
-                  <div class="team-pic">
-                    <img
-                      src="images/team-2/1.jpg"
-                      class="img-responsive"
-                      alt=""
-                    />
-                  </div>
-                  <div class="team-desc">
-                    <h3>John Smith</h3>
-                    <p class="lead">Expert Designer</p>
-                    <div class="small-border"></div>
-                    <p>
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum dolore eu fugiat.
-                    </p>
-
-                    <div class="social">
-                      <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
-                      <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
-                      <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
-                      <a href="#"><i class="fa fa-skype fa-lg"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <!-- team close -->
-              </div>
-
-              <div
-                class="col-xl-3 col-lg-4 col-sm-6 mb30 wow fadeInUp"
-                data-wow-delay=".2s"
-              >
-                <!-- team member -->
-                <div class="de-team-list">
-                  <div class="team-pic">
-                    <img
-                      src="images/team-2/3.jpg"
-                      class="img-responsive"
-                      alt=""
-                    />
-                  </div>
-                  <div class="team-desc">
-                    <h3>Sarah Michelle</h3>
-                    <p class="lead">Expert Designer</p>
-                    <div class="small-border"></div>
-                    <p>
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum dolore eu fugiat.
-                    </p>
-
-                    <div class="social">
-                      <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
-                      <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
-                      <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
-                      <a href="#"><i class="fa fa-skype fa-lg"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <!-- team close -->
-              </div>
-
-              <div
-                class="col-xl-3 col-lg-4 col-sm-6 mb30 wow fadeInUp"
-                data-wow-delay=".4s"
-              >
-                <!-- team member -->
-                <div class="de-team-list">
-                  <div class="team-pic">
-                    <img
-                      src="images/team-2/2.jpg"
-                      class="img-responsive"
-                      alt=""
-                    />
-                  </div>
-                  <div class="team-desc">
-                    <h3>Michael Dennis</h3>
-                    <p class="lead">Expert Designer</p>
-                    <div class="small-border"></div>
-                    <p>
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum dolore eu fugiat.
-                    </p>
-
-                    <div class="social">
-                      <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
-                      <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
-                      <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
-                      <a href="#"><i class="fa fa-skype fa-lg"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <!-- team close -->
-              </div>
-
-              <div
-                class="col-xl-3 col-lg-4 col-sm-6 mb30 wow fadeInUp"
-                data-wow-delay=".6s"
-              >
-                <!-- team member -->
-                <div class="de-team-list">
-                  <div class="team-pic">
-                    <img
-                      src="images/team-2/4.jpg"
-                      class="img-responsive"
-                      alt=""
-                    />
-                  </div>
-                  <div class="team-desc">
-                    <h3>Katty Wilson</h3>
-                    <p class="lead">Expert Designer</p>
-                    <div class="small-border"></div>
-                    <p>
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum dolore eu fugiat.
-                    </p>
-
-                    <div class="social">
-                      <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
-                      <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
-                      <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
-                      <a href="#"><i class="fa fa-skype fa-lg"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <!-- team close -->
-              </div>
-
-              <div class="clearfix"></div>
-            </div>
-          </div>
-        </section>
-        <!-- section close -->
-
-        <!-- section begin -->
-        <section
-          class="pt-50 pb-50"
-          id="section-schedule"
-          aria-label="section-services-tab"
-          data-bgimage="url(images/bg/2.png) fixed center no-repeat"
-        >
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6 offset-md-3 text-center wow fadeInUp">
-                <div class="uptitle">Save the Date</div>
-                <h2 class="text-uppercase mb-0">Event Schedule</h2>
-                <div class="de-separator-1"></div>
-              </div>
-
-              <div class="col-md-12 wow fadeInUp">
-                <div class="de_tab tab_style_4 text-center">
-                  <ul class="de_nav de_nav_dark">
-                    <li class="active" data-link="#section-services-tab">
-                      <h3>Day <span>01</span></h3>
-                      <h4>Nov 20, 2025</h4>
-                    </li>
-                    <li data-link="#section-services-tab">
-                      <h3>Day <span>02</span></h3>
-                      <h4>Nov 21, 2025</h4>
-                    </li>
-                    <li data-link="#section-services-tab">
-                      <h3>Day <span>03</span></h3>
-                      <h4>Nov 22, 2025</h4>
-                    </li>
-                    <li data-link="#section-services-tab">
-                      <h3>Day <span>04</span></h3>
-                      <h4>Nov 23, 2025</h4>
-                    </li>
-                    <li data-link="#section-services-tab">
-                      <h3>Day <span>05</span></h3>
-                      <h4>Nov 24, 2025</h4>
-                    </li>
-                  </ul>
-
-                  <div class="de_tab_content text-left">
-                    <div id="tab1" class="tab_single_content dark">
-                      <div class="row">
-                        <div class="col-md-12">
-                          <div class="schedule-listing">
-                            <div class="schedule-item">
-                              <div class="sc-time">08:00 - 10:00 AM</div>
-                              <div class="sc-pic">
-                                <img
-                                  src="images/team-2/square/1.jpg"
-                                  class="img-circle"
-                                  alt=""
-                                />
-                              </div>
-                              <div class="sc-name">
-                                <h4>John Smith</h4>
-                                <span>Founder & CEO</span>
-                              </div>
-                              <div class="sc-info">
-                                <h3>Introduction Creative Design</h3>
-                                <p>
-                                  In this session we will discuss about digital
-                                  topics in detail. You need laptops and other
-                                  tech support equipment. This session will last
-                                  for 2 hours. So prepare yourself.
-                                </p>
-                              </div>
-                              <div class="clearfix"></div>
-                            </div>
-                          </div>
-
-                          <div class="schedule-listing">
-                            <div class="schedule-item">
-                              <div class="sc-time">12:00 - 14:00 PM</div>
-                              <div class="sc-pic">
-                                <img
-                                  src="images/team-2/square/2.jpg"
-                                  class="img-circle"
-                                  alt=""
-                                />
-                              </div>
-                              <div class="sc-name">
-                                <h4>Michael Dennis</h4>
-                                <span>Founder & CEO</span>
-                              </div>
-                              <div class="sc-info">
-                                <h3>Getting Started With Creative Design</h3>
-                                <p>
-                                  In this session we will discuss about digital
-                                  topics in detail. You need laptops and other
-                                  tech support equipment. This session will last
-                                  for 2 hours. So prepare yourself.
-                                </p>
-                              </div>
-                              <div class="clearfix"></div>
-                            </div>
-                          </div>
-
-                          <div class="schedule-listing">
-                            <div class="schedule-item">
-                              <div class="sc-time">16:00 - 18:00 PM</div>
-                              <div class="sc-pic">
-                                <img
-                                  src="images/team-2/square/3.jpg"
-                                  class="img-circle"
-                                  alt=""
-                                />
-                              </div>
-                              <div class="sc-name">
-                                <h4>Sarah Michelle</h4>
-                                <span>Founder & CEO</span>
-                              </div>
-                              <div class="sc-info">
-                                <h3>Prepare Your Design Concept</h3>
-                                <p>
-                                  In this session we will discuss about digital
-                                  topics in detail. You need laptops and other
-                                  tech support equipment. This session will last
-                                  for 2 hours. So prepare yourself.
-                                </p>
-                              </div>
-                              <div class="clearfix"></div>
-                            </div>
-                          </div>
-
-                          <div class="schedule-listing">
-                            <div class="schedule-item">
-                              <div class="sc-time">20:00 - 22:00 PM</div>
-                              <div class="sc-pic">
-                                <img
-                                  src="images/team-2/square/4.jpg"
-                                  class="img-circle"
-                                  alt=""
-                                />
-                              </div>
-                              <div class="sc-name">
-                                <h4>Katty Wilson</h4>
-                                <span>Founder & CEO</span>
-                              </div>
-                              <div class="sc-info">
-                                <h3>Creative Design Implementation Basic</h3>
-                                <p>
-                                  In this session we will discuss about digital
-                                  topics in detail. You need laptops and other
-                                  tech support equipment. This session will last
-                                  for 2 hours. So prepare yourself.
-                                </p>
-                              </div>
-                              <div class="clearfix"></div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div id="tab2" class="tab_single_content dark">
-                      <div class="row">
-                        <div class="col-md-12">
-                          <div class="schedule-listing">
-                            <div class="schedule-item">
-                              <div class="sc-time">08:00 - 12:00 AM</div>
-                              <div class="sc-pic">
-                                <img
-                                  src="images/team-2/square/5.jpg"
-                                  class="img-circle"
-                                  alt=""
-                                />
-                              </div>
-                              <div class="sc-name">
-                                <h4>Rose Shipp</h4>
-                                <span>Founder & CEO</span>
-                              </div>
-                              <div class="sc-info">
-                                <h3>Creative Design Implementation Basic 2</h3>
-                                <p>
-                                  In this session we will discuss about digital
-                                  topics in detail. You need laptops and other
-                                  tech support equipment. This session will last
-                                  for 2 hours. So prepare yourself.
-                                </p>
-                              </div>
-                              <div class="clearfix"></div>
-                            </div>
-                          </div>
-
-                          <div class="schedule-listing">
-                            <div class="schedule-item">
-                              <div class="sc-time">12:00 - 14:00 PM</div>
-                              <div class="sc-pic">
-                                <img
-                                  src="images/team-2/square/6.jpg"
-                                  class="img-circle"
-                                  alt=""
-                                />
-                              </div>
-                              <div class="sc-name">
-                                <h4>Isaac Nicholas</h4>
-                                <span>Founder & CEO</span>
-                              </div>
-                              <div class="sc-info">
-                                <h3>How to Design Happiness</h3>
-                                <p>
-                                  In this session we will discuss about digital
-                                  topics in detail. You need laptops and other
-                                  tech support equipment. This session will last
-                                  for 2 hours. So prepare yourself.
-                                </p>
-                              </div>
-                              <div class="clearfix"></div>
-                            </div>
-                          </div>
-
-                          <div class="schedule-listing">
-                            <div class="schedule-item">
-                              <div class="sc-time">16:00 - 18:00 PM</div>
-                              <div class="sc-pic">
-                                <img
-                                  src="images/team-2/square/7.jpg"
-                                  class="img-circle"
-                                  alt=""
-                                />
-                              </div>
-                              <div class="sc-name">
-                                <h4>John Arnold</h4>
-                                <span>Founder & CEO</span>
-                              </div>
-                              <div class="sc-info">
-                                <h3>Good Storytelling For Great Design</h3>
-                                <p>
-                                  In this session we will discuss about digital
-                                  topics in detail. You need laptops and other
-                                  tech support equipment. This session will last
-                                  for 2 hours. So prepare yourself.
-                                </p>
-                              </div>
-                              <div class="clearfix"></div>
-                            </div>
-                          </div>
-
-                          <div class="schedule-listing">
-                            <div class="schedule-item">
-                              <div class="sc-time">20:00 - 22:00 PM</div>
-                              <div class="sc-pic">
-                                <img
-                                  src="images/team-2/square/1.jpg"
-                                  class="img-circle"
-                                  alt=""
-                                />
-                              </div>
-                              <div class="sc-name">
-                                <h4>John Smith</h4>
-                                <span>Founder & CEO</span>
-                              </div>
-                              <div class="sc-info">
-                                <h3>Unintuitive Lessons on Being a Designer</h3>
-                                <p>
-                                  In this session we will discuss about digital
-                                  topics in detail. You need laptops and other
-                                  tech support equipment. This session will last
-                                  for 2 hours. So prepare yourself.
-                                </p>
-                              </div>
-                              <div class="clearfix"></div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div id="tab3" class="tab_single_content dark">
-                      <div class="row">
-                        <div class="col-md-12">
-                          <div class="schedule-listing">
-                            <div class="schedule-item">
-                              <div class="sc-time">08:00 - 12:00 AM</div>
-                              <div class="sc-pic">
-                                <img
-                                  src="images/team-2/square/2.jpg"
-                                  class="img-circle"
-                                  alt=""
-                                />
-                              </div>
-                              <div class="sc-name">
-                                <h4>Michael Dennis</h4>
-                                <span>Founder & CEO</span>
-                              </div>
-                              <div class="sc-info">
-                                <h3>The Secret of Great App Design</h3>
-                                <p>
-                                  In this session we will discuss about digital
-                                  topics in detail. You need laptops and other
-                                  tech support equipment. This session will last
-                                  for 2 hours. So prepare yourself.
-                                </p>
-                              </div>
-                              <div class="clearfix"></div>
-                            </div>
-                          </div>
-
-                          <div class="schedule-listing">
-                            <div class="schedule-item">
-                              <div class="sc-time">12:00 - 14:00 PM</div>
-                              <div class="sc-pic">
-                                <img
-                                  src="images/team-2/square/3.jpg"
-                                  class="img-circle"
-                                  alt=""
-                                />
-                              </div>
-                              <div class="sc-name">
-                                <h4>Sarah Michelle</h4>
-                                <span>Founder & CEO</span>
-                              </div>
-                              <div class="sc-info">
-                                <h3>
-                                  Use Design Thinking in Your Everyday Routine
-                                </h3>
-                                <p>
-                                  In this session we will discuss about digital
-                                  topics in detail. You need laptops and other
-                                  tech support equipment. This session will last
-                                  for 2 hours. So prepare yourself.
-                                </p>
-                              </div>
-                              <div class="clearfix"></div>
-                            </div>
-                          </div>
-
-                          <div class="schedule-listing">
-                            <div class="schedule-item">
-                              <div class="sc-time">16:00 - 18:00 PM</div>
-                              <div class="sc-pic">
-                                <img
-                                  src="images/team-2/square/4.jpg"
-                                  class="img-circle"
-                                  alt=""
-                                />
-                              </div>
-                              <div class="sc-name">
-                                <h4>Katty Wilson</h4>
-                                <span>Founder & CEO</span>
-                              </div>
-                              <div class="sc-info">
-                                <h3>Design Into The Real World</h3>
-                                <p>
-                                  In this session we will discuss about digital
-                                  topics in detail. You need laptops and other
-                                  tech support equipment. This session will last
-                                  for 2 hours. So prepare yourself.
-                                </p>
-                              </div>
-                              <div class="clearfix"></div>
-                            </div>
-                          </div>
-
-                          <div class="schedule-listing">
-                            <div class="schedule-item">
-                              <div class="sc-time">20:00 - 22:00 AM</div>
-                              <div class="sc-pic">
-                                <img
-                                  src="images/team-2/square/5.jpg"
-                                  class="img-circle"
-                                  alt=""
-                                />
-                              </div>
-                              <div class="sc-name">
-                                <h4>Rose Shipp</h4>
-                                <span>Founder & CEO</span>
-                              </div>
-                              <div class="sc-info">
-                                <h3>Advanced Design Implementation</h3>
-                                <p>
-                                  In this session we will discuss about digital
-                                  topics in detail. You need laptops and other
-                                  tech support equipment. This session will last
-                                  for 2 hours. So prepare yourself.
-                                </p>
-                              </div>
-                              <div class="clearfix"></div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div id="tab4" class="tab_single_content dark">
-                      <div class="row">
-                        <div class="col-md-12">
-                          <div class="schedule-listing">
-                            <div class="schedule-item">
-                              <div class="sc-time">08:00 - 12:00 AM</div>
-                              <div class="sc-pic">
-                                <img
-                                  src="images/team-2/square/6.jpg"
-                                  class="img-circle"
-                                  alt=""
-                                />
-                              </div>
-                              <div class="sc-name">
-                                <h4>Isaac Nicholas</h4>
-                                <span>Founder & CEO</span>
-                              </div>
-                              <div class="sc-info">
-                                <h3>Advanced Design Implementation 2</h3>
-                                <p>
-                                  In this session we will discuss about digital
-                                  topics in detail. You need laptops and other
-                                  tech support equipment. This session will last
-                                  for 2 hours. So prepare yourself.
-                                </p>
-                              </div>
-                              <div class="clearfix"></div>
-                            </div>
-                          </div>
-
-                          <div class="schedule-listing">
-                            <div class="schedule-item">
-                              <div class="sc-time">12:00 - 14:00 PM</div>
-                              <div class="sc-pic">
-                                <img
-                                  src="images/team-2/square/7.jpg"
-                                  class="img-circle"
-                                  alt=""
-                                />
-                              </div>
-                              <div class="sc-name">
-                                <h4>John Arnold</h4>
-                                <span>Founder & CEO</span>
-                              </div>
-                              <div class="sc-info">
-                                <h3>
-                                  Branding, Identity &amp; Logo Design Explained
-                                </h3>
-                                <p>
-                                  In this session we will discuss about digital
-                                  topics in detail. You need laptops and other
-                                  tech support equipment. This session will last
-                                  for 2 hours. So prepare yourself.
-                                </p>
-                              </div>
-                              <div class="clearfix"></div>
-                            </div>
-                          </div>
-
-                          <div class="schedule-listing">
-                            <div class="schedule-item">
-                              <div class="sc-time">16:00 - 18:00 PM</div>
-                              <div class="sc-pic">
-                                <img
-                                  src="images/team-2/square/1.jpg"
-                                  class="img-circle"
-                                  alt=""
-                                />
-                              </div>
-                              <div class="sc-name">
-                                <h4>John Smith</h4>
-                                <span>Founder & CEO</span>
-                              </div>
-                              <div class="sc-info">
-                                <h3>The Art of Personal Branding</h3>
-                                <p>
-                                  In this session we will discuss about digital
-                                  topics in detail. You need laptops and other
-                                  tech support equipment. This session will last
-                                  for 2 hours. So prepare yourself.
-                                </p>
-                              </div>
-                              <div class="clearfix"></div>
-                            </div>
-                          </div>
-
-                          <div class="schedule-listing">
-                            <div class="schedule-item">
-                              <div class="sc-time">20:00 - 22:00 PM</div>
-                              <div class="sc-pic">
-                                <img
-                                  src="images/team-2/square/2.jpg"
-                                  class="img-circle"
-                                  alt=""
-                                />
-                              </div>
-                              <div class="sc-name">
-                                <h4>Michael Dennis</h4>
-                                <span>Founder & CEO</span>
-                              </div>
-                              <div class="sc-info">
-                                <h3>8 Secret Benefits of Branding</h3>
-                                <p>
-                                  In this session we will discuss about digital
-                                  topics in detail. You need laptops and other
-                                  tech support equipment. This session will last
-                                  for 2 hours. So prepare yourself.
-                                </p>
-                              </div>
-                              <div class="clearfix"></div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div id="tab5" class="tab_single_content dark">
-                      <div class="row">
-                        <div class="col-md-12">
-                          <div class="schedule-listing">
-                            <div class="schedule-item">
-                              <div class="sc-time">08:00 - 12:00 AM</div>
-                              <div class="sc-pic">
-                                <img
-                                  src="images/team-2/square/1.jpg"
-                                  class="img-circle"
-                                  alt=""
-                                />
-                              </div>
-                              <div class="sc-name">
-                                <h4>John Smith</h4>
-                                <span>Founder & CEO</span>
-                              </div>
-                              <div class="sc-info">
-                                <h3>
-                                  How To Brand A Startup On A Small Budget
-                                </h3>
-                                <p>
-                                  In this session we will discuss about digital
-                                  topics in detail. You need laptops and other
-                                  tech support equipment. This session will last
-                                  for 2 hours. So prepare yourself.
-                                </p>
-                              </div>
-                              <div class="clearfix"></div>
-                            </div>
-                          </div>
-
-                          <div class="schedule-listing">
-                            <div class="schedule-item">
-                              <div class="sc-time">08:00 - 12:00 AM</div>
-                              <div class="sc-pic">
-                                <img
-                                  src="images/team-2/square/2.jpg"
-                                  class="img-circle"
-                                  alt=""
-                                />
-                              </div>
-                              <div class="sc-name">
-                                <h4>John Smith</h4>
-                                <span>Founder & CEO</span>
-                              </div>
-                              <div class="sc-info">
-                                <h3>Establishing a Brand Identity</h3>
-                                <p>
-                                  In this session we will discuss about digital
-                                  topics in detail. You need laptops and other
-                                  tech support equipment. This session will last
-                                  for 2 hours. So prepare yourself.
-                                </p>
-                              </div>
-                              <div class="clearfix"></div>
-                            </div>
-                          </div>
-
-                          <div class="schedule-listing">
-                            <div class="schedule-item">
-                              <div class="sc-time">08:00 - 12:00 AM</div>
-                              <div class="sc-pic">
-                                <img
-                                  src="images/team-2/square/3.jpg"
-                                  class="img-circle"
-                                  alt=""
-                                />
-                              </div>
-                              <div class="sc-name">
-                                <h4>Sarah Michelle</h4>
-                                <span>Founder & CEO</span>
-                              </div>
-                              <div class="sc-info">
-                                <h3>Interview With World Class Designer</h3>
-                                <p>
-                                  In this session we will discuss about digital
-                                  topics in detail. You need laptops and other
-                                  tech support equipment. This session will last
-                                  for 2 hours. So prepare yourself.
-                                </p>
-                              </div>
-                              <div class="clearfix"></div>
-                            </div>
-                          </div>
-
-                          <div class="schedule-listing">
-                            <div class="schedule-item">
-                              <div class="sc-time">08:00 - 12:00 AM</div>
-                              <div class="sc-pic">
-                                <img
-                                  src="images/team-2/square/4.jpg"
-                                  class="img-circle"
-                                  alt=""
-                                />
-                              </div>
-                              <div class="sc-name">
-                                <h4>Katty Wilson</h4>
-                                <span>Founder & CEO</span>
-                              </div>
-                              <div class="sc-info">
-                                <h3>Close Event Ceremony &amp; Doorprize</h3>
-                                <p>
-                                  In this session we will discuss about digital
-                                  topics in detail. You need laptops and other
-                                  tech support equipment. This session will last
-                                  for 2 hours. So prepare yourself.
-                                </p>
-                              </div>
-                              <div class="clearfix"></div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- section close -->
-
-        <!-- section begin -->
-        <section
-          class="pt-50 pb-50"
-          id="section-sponsors"
-          data-bgimage="url(images/bg/3.png) fixed center no-repeat"
-        >
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6 offset-md-3 text-center wow fadeInUp">
-                <div class="uptitle">Powered by</div>
-                <h2 class="text-uppercase mb-0">Official Sponsors</h2>
-                <div class="de-separator-1"></div>
-              </div>
-
-              <div class="col-md-12 text-center wow fadeInUp">
-                <h3>Gold Sponsors</h3>
-                <div class="spacer-single"></div>
-                <img src="images/logo/1.png" alt="" class="grey-hover" />
-                <img src="images/logo/2b.png" alt="" class="grey-hover" />
-                <img src="images/logo/3b.png" alt="" class="grey-hover" />
-                <img src="images/logo/4b.png" alt="" class="grey-hover" />
-                <img src="images/logo/5.png" alt="" class="grey-hover" />
-                <img src="images/logo/6.png" alt="" class="grey-hover" />
-                <img src="images/logo/7.png" alt="" class="grey-hover" />
-                <img src="images/logo/8b.png" alt="" class="grey-hover" />
-              </div>
-            </div>
+            <div class="row">asdasd</div>
           </div>
         </section>
         <!-- section close -->
         <!-- section begin -->
-        <section
-          id="section-portfolio"
-          class="no-top no-bottom"
-          aria-label="section"
-        >
+        <section class="no-bottom section-spacer">
           <div
             id="gallery"
             class="gallery zoom-gallery full-gallery de-gallery pf_full_width wow fadeInUp"
@@ -1232,6 +593,7 @@
             <!-- close gallery item -->
           </div>
         </section>
+        <!-- section close -->
         <!-- section begin -->
         <section
           id="call-to-action"
@@ -1242,201 +604,121 @@
             <div class="row align-items-center">
               <div class="col-lg-8 col-md-7">
                 <h3 class="size-2 no-margin">
-                  Get your seat before the price goes up
+                  Register Now Before It’s Too Late! Don’t Miss Out 
                 </h3>
               </div>
 
               <div class="col-lg-4 col-md-5 text-right">
-                <a
-                  href="#section-ticket"
-                  class="btn-custom text-white scroll-to"
-                  >Get Ticket</a
-                >
+                <a href="#" class="site-btn-2 scroll-to"
+                  >Register Now <i class="fas fa-user"></i
+                ></a>
               </div>
             </div>
           </div>
         </section>
         <!-- logo carousel section close -->
-
-        <section id="section-news" class="pt-50 pb-50" s>
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6 offset-md-3 text-center wow fadeInUp">
-                <div class="uptitle">Latest News</div>
-                <h2 class="text-uppercase mb-0">Inside the Design Expo</h2>
-                <div class="de-separator-1"></div>
-              </div>
-
-              <div class="col-lg-4">
-                <div
-                  class="hover relative overflow-hidden rounded-1 overflow-hidden"
-                >
-                  <a
-                    class="abs top-0 z-2 w-100 h-100"
-                    href="news-single.html"
-                  ></a>
-                  <div class="relative overflow-hidden">
-                    <div
-                      class="abs z-2 bg-color rounded-1 text-white p-3 pb-2 m-4 text-center fw-600"
-                    >
-                      <h4 class="fs-36 mb-0 lh-1">28</h4>
-                      <span>Mar</span>
-                    </div>
-                    <img
-                      src="images/news/s1.webp"
-                      class="hover-scale-in-1 w-100"
-                      alt=""
-                    />
-                  </div>
-
-                  <div class="bg-dark p-40">
-                    <h4 class="mb-3 lh-1-5">
-                      Global Design Minds to Converge at 2025 Design Expo
-                      Conference
-                    </h4>
-                    <p>
-                      Pariatur ullamco velit duis elit magna voluptate nostrud
-                      sed aliquip anim fugiat irure in esse non eu aute veniam
-                      ut esse.
-                    </p>
-
-                    <a href="#" class="relative z-3 d-flex align-items-center">
-                      <img
-                        src="images/team/1.jpg"
-                        class="w-30px me-3 circle"
-                        alt=""
-                      />
-                      <h6 class="text-white mb-0">John Smith</h6>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4">
-                <div
-                  class="hover relative overflow-hidden rounded-1 overflow-hidden"
-                >
-                  <a
-                    class="abs top-0 z-2 w-100 h-100"
-                    href="news-single.html"
-                  ></a>
-                  <div class="relative overflow-hidden">
-                    <div
-                      class="abs z-2 bg-color rounded-1 text-white p-3 pb-2 m-4 text-center fw-600"
-                    >
-                      <h4 class="fs-36 mb-0 lh-1">26</h4>
-                      <span>Mar</span>
-                    </div>
-                    <img
-                      src="images/news/s2.webp"
-                      class="hover-scale-in-1 w-100"
-                      alt=""
-                    />
-                  </div>
-
-                  <div class="bg-dark p-40">
-                    <h4 class="mb-3 lh-1-5">
-                      Future of Design Unveiled at Upcoming International Design
-                      Expo
-                    </h4>
-                    <p>
-                      Pariatur ullamco velit duis elit magna voluptate nostrud
-                      sed aliquip anim fugiat irure in esse non eu aute veniam
-                      ut esse.
-                    </p>
-
-                    <a href="#" class="relative z-3 d-flex align-items-center">
-                      <img
-                        src="images/team/1.jpg"
-                        class="w-30px me-3 circle"
-                        alt=""
-                      />
-                      <h6 class="text-white mb-0">John Smith</h6>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4">
-                <div
-                  class="hover relative overflow-hidden rounded-1 overflow-hidden"
-                >
-                  <a
-                    class="abs top-0 z-2 w-100 h-100"
-                    href="news-single.html"
-                  ></a>
-                  <div class="relative overflow-hidden">
-                    <div
-                      class="abs z-2 bg-color rounded-1 text-white p-3 pb-2 m-4 text-center fw-600"
-                    >
-                      <h4 class="fs-36 mb-0 lh-1">24</h4>
-                      <span>Mar</span>
-                    </div>
-                    <img
-                      src="images/news/s3.webp"
-                      class="hover-scale-in-1 w-100"
-                      alt=""
-                    />
-                  </div>
-
-                  <div class="bg-dark p-40">
-                    <h4 class="mb-3 lh-1-5">
-                      Live from the Design Expo: Trends Shaping Tomorrow’s
-                      Creative World
-                    </h4>
-                    <p>
-                      Pariatur ullamco velit duis elit magna voluptate nostrud
-                      sed aliquip anim fugiat irure in esse non eu aute veniam
-                      ut esse.
-                    </p>
-
-                    <a href="#" class="relative z-3 d-flex align-items-center">
-                      <img
-                        src="images/team/1.jpg"
-                        class="w-30px me-3 circle"
-                        alt=""
-                      />
-                      <h6 class="text-white mb-0">John Smith</h6>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="spacer-single"></div>
-
-              <div class="col-lg-12 text-center">
-                <a class="btn-custom text-white" href="news.html"
-                  >View All News</a
-                >
-              </div>
-            </div>
-          </div>
-        </section>
-
         <!-- footer begin -->
         <footer class="style-2">
           <div class="container">
             <div class="row align-items-middle">
-              <div class="col-md-3">
-                <div class="d-flex">
-                  <img src="images/logo.png" class="logo-small" alt="" /><br />
-                  <span class="fs-3">GoEvent</span>
+              <div class="col-md-4">
+                <div class="">
+                  <img src="images/home/logo.webp" class="logo-small" alt="" />
+                </div>
+                <div>
+                  <p class="lh-1-3">
+                    Join our event management community for exclusive updates,
+                    special offers, and the latest news delivered straight to
+                    your inbox
+                  </p>
+                  <div class="">
+                    <div class="social-icons">
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                  </div>
                 </div>
               </div>
-
-              <div class="col-md-6">
-                &copy; Copyright 2025 - GoEvent - Event Conference by
-                <span class="id-color">FlixaGlobal</span>
+              <div class="col-lg-6 offset-md-2">
+                <div class="row mb-5">
+                  <div class="col-lg-4">
+                    <div class="">
+                      <p class="site-color">EVENTA</p>
+                      <ul class="ul-style-2">
+                        <li>
+                          <a href="">Contact Us</a>
+                        </li>
+                        <li>
+                          <a href="">About Us</a>
+                        </li>
+                        <li>
+                          <a href="">Blog</a>
+                        </li>
+                        <li>
+                          <a href="">Career</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="">
+                      <p class="site-color">FEATURES</p>
+                      <ul class="ul-style-2">
+                        <li>
+                          <a href="">Event Hosting</a>
+                        </li>
+                        <li>
+                          <a href="">Newsletter</a>
+                        </li>
+                        <li>
+                          <a href="">Email Marketing</a>
+                        </li>
+                        <li>
+                          <a href="">QR Code Ticketing</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="">
+                      <p class="site-color">SUPPORT</p>
+                      <ul class="ul-style-2">
+                        <li>
+                          <a href="">Help Center / FAQs</a>
+                        </li>
+                        <li>
+                          <a href="">For Event</a>
+                        </li>
+                        <li>
+                          <a href="">Terms & Conditions</a>
+                        </li>
+                        <li>
+                          <a href="">Privacy Policy</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </div>
-
-              <div class="col-md-3 text-right">
-                <div class="social-icons">
-                  <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
-                  <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
-                  <a href="#"><i class="fa fa-rss fa-lg"></i></a>
-                  <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
-                  <a href="#"><i class="fa fa-skype fa-lg"></i></a>
-                  <a href="#"><i class="fa fa-dribbble fa-lg"></i></a>
+              <hr />
+              <div class="col-md-12">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    &copy; Copyright 2025 - GoEvent - Event Conference by
+                    <span class="text-white">FlixaGlobal</span>
+                  </div>
+                  <div>
+                    <p class="text-end flex items-center mb-0">
+                      <small class="pt-1 pe-1">Developed With Love By</small
+                      ><img
+                        class="img-fluid"
+                        width="60px"
+                        src="https://weeklyinqilab.com/_next/image?url=%2Fimages%2Fflixzaglobal.webp&w=256&q=75"
+                        alt=""
+                      />
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1449,48 +731,50 @@
     </div>
 
     <div id="de-extra-wrap" class="de_light">
-      <span id="b-menu-close">
-        <span></span>
-        <span></span>
+      <span id="b-menu-close" class="p-2 px-3">
+        <i class="fas fa-x"></i>
       </span>
-      <div class="de-extra-content">
-        <h3>Information</h3>
-        <p>
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
-          ab illo inventore veritatis et quasi architecto beatae vitae dicta
-          sunt explicabo.
-        </p>
+      <div class="parent-container">
+        <!-- Sidebar Top Content -->
+        <div>
+          <h3>Information</h3>
+          <p>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+            quae ab illo inventore veritatis et quasi architecto beatae vitae
+            dicta sunt explicabo.
+          </p>
 
-        <div class="spacer10"></div>
+          <div class="spacer10"></div>
 
-        <div class="p-4 border">
-          <div class="text-center">
-            <h1>485 of 1000</h1>
-            <p>Seats available</p>
-            <a
-              href="#section-ticket"
-              class="btn-custom btn-fullwidth text-white scroll-to"
-              >Get Your Ticket</a
-            >
+          <div class="p-4 border">
+            <div class="text-center">
+              <h1>485 of 1000</h1>
+              <p>Seats available</p>
+              <a href="#section-ticket" class="site-btn-2 scroll-to"
+                >Get Your Ticket <i class="fas fa-ticket"></i
+              ></a>
+            </div>
           </div>
         </div>
 
         <div class="spacer-single"></div>
+        <!-- Sidebar Bottom Content -->
+        <div class="sidebar-contact">
+          <h3>Where &amp; When?</h3>
 
-        <h3>Where &amp; When?</h3>
-        <div class="h6 padding10 pt0 pb0">
-          <i class="i_h3 fa fa-calendar-check-o id-color"></i>November 20th to
-          25th
-        </div>
-        <div class="h6 padding10 pt0 pb0">
-          <i class="i_h3 fa fa-map-marker id-color"></i>Palo Alto, California
-        </div>
-        <div class="h6 padding10 pt0 pb0">
-          <i class="i_h3 fa fa-phone id-color"></i>1 200 300 9000
-        </div>
-        <div class="h6 padding10 pt0 pb0">
-          <i class="i_h3 fa fa-envelope-o id-color"></i>info@goevent.com
+          <div class="h6 padding10 pt0 pb0">
+            <i class="fas fa-phone-volume text-white"></i>1 200 300 9000
+          </div>
+          <div class="h6 padding10 pt0 pb0">
+            <i class="fas fas fa-envelope text-white"></i>info@goevent.com
+          </div>
+          <div class="h6 padding10 pt0 pb0">
+            <i class="fas fa-location-dot text-white"></i>Palo Alto, California
+          </div>
+          <div class="h6 padding10 pt0 pb0">
+            <i class="fas fa-calendar-days text-white"></i>November 20th to 25th
+          </div>
         </div>
       </div>
     </div>

@@ -66,7 +66,8 @@ input[type=submit].btn-custom,
 #b-menu span,
 #b-menu-close span
 {
-	background-color:var(--primary-color-1);
+	background-color: transparent;
+	border: 1px solid var(--primary-color);
 }
 
 .bg-color-2,
@@ -77,11 +78,11 @@ input[type=submit].btn-custom,
 
 section.gradient-to-right,
 .ps1-deco{
-background:linear-gradient(to right, var(--primary-color-1), var(--secondary-color));
+background:linear-gradient(to right, var(--primary-color), var(--secondary-color));
 }
 
 .countdown-s1 .countdown-show4 .countdown-section{
-background:linear-gradient(to top, var(--primary-color-1), var(--secondary-color));
+background:linear-gradient(to top, var(--primary-color), var(--secondary-color));
 }
 
 .feature-box i,
@@ -134,7 +135,7 @@ blockquote.testimonial-big:before,
 .list-inline-style-1 li:before,
 .de-team-list p.lead
 {
-	color:var(--primary-color-1);
+	color:var(--primary-color);
 }
 
 .id-color-2,
@@ -164,7 +165,7 @@ a.btn-slider.btn-color,
 .de_tab.tab_style_4 .de_nav
 {
 
-	border-color:var(--primary-color-1);
+	border-color:var(--primary-color);
 }
 
 .box-fx .inner,
@@ -172,34 +173,34 @@ a.btn-slider.btn-color,
 .blog-list img,
 .arrow-up
 {
-	border-bottom-color:var(--primary-color-1);
+	border-bottom-color:var(--primary-color);
 }
 
 .arrow-down{
-	border-top-color:var(--primary-color-1);
+	border-top-color:var(--primary-color);
 }
 
 .callbacks_nav {
-	background-color:var(--primary-color-1);
+	background-color:var(--primary-color);
 }
 
 
 .de_tab .de_nav li span {
-border-top: 3px solid var(--primary-color-1);
+border-top: 3px solid var(--primary-color);
 }
 
 .feature-box-big-icon i:after {
-border-color: var(--primary-color-1) transparent; /*same colour as the lower of the bubble's gradient*/
+border-color: var(--primary-color) transparent; /*same colour as the lower of the bubble's gradient*/
 }
 
 .de_review li.active img{
-	border:solid 4px var(--primary-color-1);
+	border:solid 4px var(--primary-color);
 }
 
 blockquote.s1{
-	border-left-color:var(--primary-color-1);
+	border-left-color:var(--primary-color);
 }
 
 .de_tab.tab_style_4 .de_nav li{
-	border-right-color:var(--primary-color-1);
+	border-right-color:var(--primary-color);
 }
